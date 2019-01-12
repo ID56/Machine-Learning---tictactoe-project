@@ -1,0 +1,24 @@
+randperm(N,m) returns m randomly chosen integers from the set [1...N]
+--using randperm(N,1) to choose a random index
+
+available_index[]={1,2,3...9}
+
+A[9]={}
+
+for turn=1 to 9
+  -randomly choose an index from the list of available indexes
+  -odd turns signify player who moved first, and even signifies the other
+  -player1's moves fill in A with weights equal to 5; player2 fills in with 50
+  -at the end of every turn win conditions are checked
+
+We'll add the winner's data to Xtrain and ytrain.
+** In case of a draw we're adding both player's data.
+
+On average, a game ends in 5/6 moves. A hundred iterations thus gives us a dataset sized approximately in the range of 500 to 600 labeled examples.
+
+Possible approaches:
+-Multiclass classification with one vs all logistic regression
+-Neural network, deep learning approach
+-SVM kernels
+
+ 
