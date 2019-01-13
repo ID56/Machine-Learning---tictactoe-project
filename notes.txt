@@ -6,10 +6,12 @@ available_index[]={1,2,3...9}
 A[9]={}
 
 for turn=1 to 9
-  -randomly choose an index from the list of available indexes
+  -check if any player is about to win, ie, has two lined up moves. If the game finishes, exit the loop
+  -Otherwise, randomly choose an index from the list of available indexes
   -odd turns signify player who moved first, and even signifies the other
   -player1's moves fill in A with weights equal to 5; player2 fills in with 50
-  -at the end of every turn win conditions are checked
+  @Omar we should try with weights +1 and -1
+  -at the end of the ninth turn, if no one has won, a draw has taken place
 
 We'll add the winner's data to Xtrain and ytrain.
 ** In case of a draw we're adding both player's data.
