@@ -1,5 +1,5 @@
 # Machine-Learning---tictactoe-project
-Tictactoe game which attempts to learn how to play from endgame data.
+Tictactoe game which attempts to learn how to play from endgame data. (Work in Progress)
 
 This is an implementation of the concepts from the first chapter of Introduction to Reinforcement Learning, by Sutton and Barto.
 
